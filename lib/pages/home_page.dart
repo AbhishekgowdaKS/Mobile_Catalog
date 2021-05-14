@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_cataloge/widgets/drawer.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key key}) : super(key: key);
@@ -12,7 +13,7 @@ class HomePage extends StatelessWidget {
           child: Text("Welcome to Mobile Catalog"),
         ),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }
