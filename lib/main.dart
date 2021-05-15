@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:mobile_cataloge/pages/cart_page.dart';
 import 'package:mobile_cataloge/pages/home_page.dart';
 import 'package:mobile_cataloge/pages/login_page.dart';
+import 'package:mobile_cataloge/utils/routes.dart';
+import 'package:mobile_cataloge/widgets/themes.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,17 +17,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "Material Catalog",
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-          primarySwatch: Colors.deepPurple,
-          fontFamily: GoogleFonts.lato().fontFamily,
-      ),
       themeMode: ThemeMode.light,
-      darkTheme: ThemeData(brightness: Brightness.dark),
-      initialRoute: "/",
+      theme: MyTheme.lightTheme(context),
+      darkTheme: MyTheme.darkTheme(context),
+      initialRoute: MyRoutes.homeRoute,
       routes: {
         "/": (context) => LoginPage(),
-        "/home": (context) => HomePage(),
-        "/login": (context) => LoginPage(),
+        MyRoutes.homeRoute: (context) => HomePage(),
+        MyRoutes.loginRoute: (context) => LoginPage(),
+        MyRoutes.cartRoute: (context) => CartPage(),
       },
     );
   }
