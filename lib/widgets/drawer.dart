@@ -6,8 +6,7 @@ class MyDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final imgUrl = "https://img-premium.flaticon.com/png/512/2750/2750657.png?token=exp=1621010140~hmac=69f97e9757f027eb871f0155e7dc9f00";
-
+    final imgUrl = "https://img-premium.flaticon.com/png/512/3011/3011270.png?token=exp=1621069066~hmac=e07d4314905e919c9166ff7255e82d42";
     return Drawer(
       child: Container(
         color: Colors.deepPurple,
