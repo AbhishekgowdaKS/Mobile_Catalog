@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_cataloge/models/catalog.dart';
-import 'package:mobile_cataloge/widgets/themes.dart';
 import 'package:velocity_x/velocity_x.dart';
 
+import 'add_to_cart.dart';
 import 'catalog_image.dart';
 
 class CatalogItem extends StatelessWidget {
@@ -14,45 +14,43 @@ class CatalogItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return VxBox(
-        child: Row(
+    var children2 = [
+      Hero(
+          tag: Key(catalog.id.toString()),
+          child: CatalogImage(image: catalog.image)),
+      Expanded(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Hero(
-                tag: Key(catalog.id.toString()),
-                child: CatalogImage(image: catalog.image)
-            ),
-            Expanded(child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.center,
+            catalog.name.text.lg.color(context.accentColor).bold.make(),
+            catalog.description.text
+                .textStyle(context.captionStyle)
+                .make()
+                .pOnly(right: 16,),
+            10.heightBox, //SizedBox using velocity_Vx
+            ButtonBar(
+              alignment: MainAxisAlignment.spaceBetween,
+              buttonPadding: EdgeInsets.zero,
               children: [
-                catalog.name.text.lg
-                    .color(MyTheme.darkBluishColor)
-                    .bold
-                    .make(),
-                catalog.description.text.textStyle(context.captionStyle)
-                    .make()
-                    .pOnly(right: 16),
-                10.heightBox, //SizedBox using velocity_Vx
-                ButtonBar(
-                  alignment: MainAxisAlignment.spaceBetween,
-                  buttonPadding: EdgeInsets.zero,
-                  children: [
-                    "\u{20B9}${catalog.price}".text.bold.xl.make(),
-                    ElevatedButton(
-                        onPressed: () {},
-                        style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all(
-                                MyTheme.darkBluishColor),
-                            shape: MaterialStateProperty.all(StadiumBorder())
-                        ),
-                        child: "Add to cart".text.make()
-                    ),
-                  ],
-                ).pOnly(right: 8.0)
+                "\u{20B9}${catalog.price}".text.bold.xl.make(),
+                AddToCart(
+                  catalog: catalog,
+                ),
               ],
-            ))
+            ).pOnly(right: 8.0)
           ],
-        )
-    ).white.rounded.square(150).make().py16();
+        ).p(context.isMobile ? 0 : 16),
+      )
+    ];
+    return VxBox(
+      child: context.isMobile
+          ? Row(
+              children: children2,
+            )
+          : Column(
+              children: children2,
+            ),
+    ).color(context.cardColor).rounded.square(150).make().py16();
   }
 }
