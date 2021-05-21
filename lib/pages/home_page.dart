@@ -22,6 +22,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
 
   // final url = "https://raw.githubusercontent.com/AbhishekgowdaKS/Mobile_Catalog/15/05/2021/assets/files/catalog.json";
+
   @override
   void initState() {
     super.initState();
@@ -31,8 +32,10 @@ class _HomePageState extends State<HomePage> {
   loadData() async {
     await Future.delayed(Duration(seconds: 2));
     final catalogJson = await rootBundle.loadString("files/catalog.json");
+
     // final response = await http.get(Uri.parse(url));
     // final catalogJson = response.body;
+
     final decodedData = jsonDecode(catalogJson);
     final productsData = decodedData["products"];
     CatalogModel.items = List.from(productsData)

@@ -32,6 +32,7 @@ dependencies:
   velocity_x: ^3.0.0
   http: ^0.13.3
   url_strategy: ^0.2.0
+  pay: ^1.0.1
 
 
 dev_dependencies:
@@ -53,6 +54,7 @@ flutter:
   assets:
     - assets/images/
     - assets/files/
+    - assets/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

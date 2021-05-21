@@ -14,7 +14,7 @@ class _LoginPageState extends State<LoginPage> {
   final _formKey = GlobalKey<FormState>();
 
   moveToHome(BuildContext context) async {
-    if(_formKey.currentState.validate()) {
+    if (_formKey.currentState.validate()) {
       setState(() {
         changeButton = true;
       });
@@ -104,9 +104,10 @@ class _LoginPageState extends State<LoginPage> {
                               : Text(
                                   "Login",
                                   style: TextStyle(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 18),
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18,
+                                  ),
                                 ),
                         ),
                       ),
