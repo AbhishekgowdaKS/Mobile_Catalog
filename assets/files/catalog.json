@@ -11,7 +11,7 @@
     {
       "id": 2,
       "name": "Samsung galaxy S21 Ultra",
-      "description": "Samsung's latest mobile with Samsung Exynos 2100 processor",
+      "description": "Samsung's latest mobile with powerful processor",
       "price": 116999,
       "color": "#00ac51",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyihB2n5VKbzB1pNjHywQjcqiYlSbylU18EQ&usqp=CAU"
@@ -19,7 +19,7 @@
     {
       "id": 3,
       "name": "OnePlus 9 Pro",
-      "description": "OnePlus's mobile with powerful Qualcomm Snapdragon 888 5G processor",
+      "description": "OnePlus's mobile with powerful Qualcomm processor",
       "price": 64999,
       "color": "#e0bfae",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREnurkze0B4M2mzvH9OkfrSiEHa5fjwGy7pA&usqp=CAU"
@@ -27,7 +27,7 @@
     {
       "id": 4,
       "name": "Asus ROG Phone 5",
-      "description": "A gaming phone with powerful Qualcomm Snapdragon 888 5G processor",
+      "description": "A gaming phone with powerful Qualcomm processor",
       "price": 49999,
       "color": "#544ee4",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWZQRImV1BXCbEnYZMbUspn5yngxPTdp_5uA&usqp=CAU"
@@ -35,7 +35,7 @@
     {
       "id": 5,
       "name": "Xiaomi Poco X3 Pro",
-      "description": "Xiaomi's mid-end range mobile with good specification",
+      "description": "Xiaomi's mobile with good specification",
       "price": 21999,
       "color": "#e3e4e9",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4fPEIpSHlZFDW4XNZG7h4oacpLt1SaXwb5UILcOyzyeVceoyejOlxlNa-&usqp=CAc"
@@ -43,7 +43,7 @@
     {
       "id": 6,
       "name": "Mi 11 Ultra",
-      "description": "Xiaomi's 11th generation with powerful specifications",
+      "description": "Xiaomi's 11th gen with powerful specifications",
       "price": 69999,
       "color": "#f73984",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT91FfoX2FmhfIIkIz4mSTfDpIQIj3QHNUa9A&usqp=CAU"
@@ -51,7 +51,7 @@
     {
       "id": 7,
       "name": "Vivo iQOO 7 Series",
-      "description": "iQOO mobile is a dual chip monster with Qualcomm Snapdragon 870 5G processor",
+      "description": "iQOO mobile with Qualcomm Snapdragon 870 5G processor",
       "price": 31990,
       "color": "#1c1c1c",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXiYvISb0bH1bP_BRRZE4pdvcKaPNFmOw-Xg&usqp=CAU"
@@ -67,7 +67,7 @@
     {
       "id": 9,
       "name": "OnePlus Nord",
-      "description": "OnePlus's mid-end range mobile with Qualcomm Snapdragon 765 5G processor",
+      "description": "OnePlus's mobile with Qualcomm 5G processor",
       "price": 29999,
       "color": "#33505a",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7m1KeXre2FZV_Xi00APIyk8Z8C6gvdHz8Mw&usqp=CAU"
@@ -75,7 +75,7 @@
     {
       "id": 10,
       "name": "Google Pixel 5A",
-      "description": "Google branded mobile with Qualcomm Snapdragon 765 5G processor",
+      "description": "Google branded mobile with Qualcomm processor",
       "price": 34999,
       "color": "#00ac51",
       "image": "https://images-na.ssl-images-amazon.com/images/I/81AqwYyZjzL._AC_SL1500_.jpg"
